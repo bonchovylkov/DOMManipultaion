@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        p{
+            margin:0;
+            padding:0;
+        }
+        #content{
+            padding-top:30px;
+            position:absolute;
+            left:600px;
+            top:40px;
+            border:1px solid black;
+            width:600px;
+            height:320px;
+            border-radius:15px;
+        }
+        #wrapper{
+            margin-left:20px;
+            margin-top:20px;
+            display:inline-block;
+            border:1px solid black;
+            padding:15px;
+            border-radius:15px;
+            width:510px;
+        }
+        label{
+            display:block;
+            text-align:justify;
+            }
+        input,textarea{
+            display:block;
+        }
+        textarea{
+            width:500px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <label for="textarea">Write a lot of words,<strong>separated by ","</strong>
+            You have to repeat some of them to create a nice cloud!!Check the exampe first
+            then you can make your own!
+        </label>
+        <textarea id="textarea">
+            words,what ,spinderman, spiderman, words, text,koffe,words,what,spinderman,mouse,phone,laptop,laptop,knife,spiderman,
+            kofee,nan,nan,null,null,null,words,maybe,maybe,spinderman,spinderman,fostata
+        </textarea>
+        <label for="createCloud">Create  your own clowd</label>
+        <input type="submit" value="Create your cloud!" id="createCloud" onclick="readTheWords()"/>
+    </div>
+    <div id="content">
+
+    </div>
+    <script src="scripts/tagCloud.js"></script>
+</body>
+</html>

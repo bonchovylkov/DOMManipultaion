@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #wrapper{
+            margin-left:400px;
+            margin-top:100px;
+            border:1px solid black;
+            border-radius:5px;
+            width:auto;
+            display:inline-block;
+            padding:15px;
+        }
+        input,label{
+            display:block;
+        }
+        textarea{
+            width:300px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <textarea>
+        Write some text, and play with the colors beneath!!!
+    </textarea>
+        <label for="fontColor">Set the font color of the text area above!</label>
+      <input type="color" id="fontColor" onchange="setTheFontColor()"/>
+      <label for="backgroundColor">Set the font color of the text area above!</label>
+       <input type="color" id="backgroundColor" onchange="setThebackgroundColor()"/>
+    </div>
+     <script src="scripts/textAreaInput.js"></script>
+</body>
+</html>

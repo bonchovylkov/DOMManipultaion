@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/styles/treeStyle.css">
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#">list item 1</a></li>
+            <li><a href="#" onclick="expandMenu()">list item 2</a>
+                <ul id="subMenuOne">
+                    <li><a href="#">sub list item 1</a></li>
+                    <li><a href="#" onclick="expandSecondMenu()">sub list item 2</a></li>
+                    <ul id="subMenuTwo">
+                        <li><a href="#">sub sub list item 1</a></li>
+                        <li><a href="#">sub sub list item 2</a></li>
+                        <li><a href="#">sub sub list item 3</a></li>
+                    </ul>
+                    <li><a href="#">sub list item 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">list item 3</a></li>
+            <li><a href="#">list item 4</a></li>
+            <li><a href="#">list item 5</a></li>
+            <li><a href="#">list item 6</a></li>
+        </ul>
+    </div>
+    <script src="scripts/treeView.js"></script>
+</body>
+</html>

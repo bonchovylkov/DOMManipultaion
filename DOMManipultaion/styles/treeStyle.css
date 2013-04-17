@@ -1,0 +1,24 @@
+﻿body,header,nav,ul,li {
+    margin:0;
+    padding:0;
+}
+ul{
+ list-style-type:none;
+}
+div ul li ul{
+    display:none;
+     position: relative;
+     left: 50px;
+}
+div ul li ul li{
+    position: relative;
+}
+.expanded{
+    display:block;
+}
+
+div{
+    margin-left:20px;
+    margin-top:20px;
+}
+
